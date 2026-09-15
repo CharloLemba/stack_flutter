@@ -24,6 +24,8 @@ class MainApp extends StatelessWidget {
             ],
           ),
           */
+              // Contoh foto profil dengan indikator online
+              /*
               Stack(
                 alignment: Alignment.bottomRight,
                 children: [
@@ -40,6 +42,30 @@ class MainApp extends StatelessWidget {
                       border: Border.all(color: Colors.white, width: 3),
                     ),
                     child: SizedBox(height: 25, width: 25),
+                  ),
+                ],
+              ),
+              */
+              // Contoh gambar product dengan diskon diatas
+              Stack(
+                children: [
+                  Image.network(
+                    "'https://images.pexels.com/photos/19060954/pexels-photo-19060954/free-photo-of-iphone-15-pro-max.jpeg'",
+                  ),
+                  Positioned(
+                    top: 10,
+                    right: 10,
+                    child: Container(
+                      padding: EdgeInsets.all(8),
+                      color: Colors.red,
+                      child: Text(
+                        "Diskon 20%",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
                   ),
                 ],
               ),
